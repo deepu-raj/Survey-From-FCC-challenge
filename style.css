@@ -1,0 +1,123 @@
+:root{
+    --background-color:rgb(94, 94, 245);
+    --form-color:rgb(7, 7, 56);
+    --font-color:rgb(241, 232, 232);
+    --size-subheading:1.125rem;
+    --size-label:1.125rem;
+    --font-family: sans-serif;
+    --accent-left:rgb(94, 94, 245);
+    --accent-right:rgb(142, 142, 231);
+    
+}
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-family);
+    margin:0;
+    background: linear-gradient(to right, var(--accent-left),var(--accent-right));
+    font-weight: 140;
+    color: white;
+    line-height: 1.6;
+}
+button,input,textarea,select{
+    font-family: inherit;
+}
+.container{
+    margin:3.125rem auto;
+
+}
+header{
+    
+    padding:2rem 1rem 1rem 1rem;
+    text-shadow: 1px 1px #333;
+}
+.text-center{
+    text-align:center;
+}
+.description{
+    font-size:var(--size-subheading);
+    margin:1rem auto;
+    
+    }
+h1{
+    font-weight:400;
+    margin:0;
+    line-height:1.2;
+}
+form{
+    padding:2.5rem 0.625rem;
+    background-color: var(--form-color);
+    width:50%;
+    border-radius: 0.5rem;
+    margin:auto;
+}
+.form-group{
+    
+    display: flex;
+    flex-direction:column;
+    margin:2rem;
+}
+.form-group p{
+    line-height:1;
+    margin:0.5rem 0.1rem;
+    
+}
+
+.form-group p:not(:nth-child(1)){
+    margin:0.5rem 0;
+}
+.form-label{
+    font-size: var(--size-label);
+}
+.form-control{
+    display:block;
+    width:100%;
+    font-size:1rem;
+    padding:0.375rem 0.75rem;
+    border-radius: 0.3rem;
+    border: 1px solid #dddddd;
+    margin-top:0.4rem;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    width:1rem;
+    height:1rem;
+    margin-right:0.25rem;
+}
+textarea{
+    font-size:1.2rem;
+    width:100%;
+    border: none;
+    margin:0.5rem 0;
+    padding:0.375rem 0.75rem;
+    height:auto;
+}
+button{
+    background-color:rgb(21, 134, 21) ;
+    border: none;
+    color:white;
+    cursor:pointer;
+    padding:0.75rem;
+    font-size:var(--size-label);
+}
+@media screen and (max-width:1141px) {
+    form{
+        width:80%
+    }
+}
+@media screen and (max-width:420px){
+    form{
+        width:95%;
+        padding:1rem 0;
+    }
+    .form-group{
+        margin: 1rem 1rem;
+    }
+    .form-group p{
+        line-height: 1.5;
+        margin-top:1rem;
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header class="text-center">
+            <h1 id="title"> Web Design Survey Form </h1>
+            <p id="description" class="description"> <em>Tell us how we can do better</em> </p>
+        </header>
+        <form action="" id="survey-form" class="form-label">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="name" class="form-control" placeholder="Enter Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="age-label">Age</label>
+                <input type="number" class="form-control" id="number" min="0" max="100" required placeholder="Enter Age">
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown" >Which option describes your role best?</label>
+                <select name="dropdown" id="dropdown" class="form-control" required>
+                    <option disabled>Select Role</option>
+                    <option value="Student">Student</option>
+                    <option value="Full time employed">Full time employed</option>
+                    <option value="Business">Business</option>
+                    <option value="Prefer Not to Say">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you reccomend freecodecamp to a friend?</p>
+                <p>
+                    <label>
+                        <input type="radio" name="answer" id="definitely" value="Definitely" checked>
+                        Definitely
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="radio" name="answer" id="yes" value="Yes">
+                        Yes
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="radio" name="answer" id="no" value="No">
+                        No
+                    </label>
+                </p>
+            </div>
+            <div class="form-group">
+                <p>What would you see improved? check all the required</p>
+                <p>
+                    <label>
+                        <input type="checkbox" name="checkbox" id="frontend" value="Front-End Projects">
+                        Front-End Projects
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" name="checkbox" id="backend" value="Back-End Projects">
+                        Back-End Projects
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" name="checkbox" id="ui" value="User Design">
+                        User Designs
+                    </label>
+                </p>
+            </div>
+            <div class="form-group">
+                <p>Any Comments or suggestions</p>
+                <textarea name="comments" id="comments" cols="50" rows="6" placeholder="enter comments here.." required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+           
+
+
+</body>
+</html>
